@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8A3CC"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.SignUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:fontFamily="@font/lobster"
+        android:text="@string/sign_in"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="@dimen/_140sdp"
+        android:layout_marginEnd="30sp"
+        android:background="#A8A3CC"
+        android:backgroundTint="#A8A3CC"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="@dimen/_5sdp">
+        <EditText
+            android:id="@+id/name"
+            android:autofillHints=""
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext"
+            android:drawableEnd="@drawable/person"
+            android:hint="@string/name"
+            android:paddingStart="20sp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="30sp"
+        android:background="#A8A3CC"
+        android:backgroundTint="#A8A3CC"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="@dimen/_5sdp">
+        <EditText
+            android:id="@+id/email"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/edittext"
+            android:drawableEnd="@drawable/baseline_email_24"
+            android:hint="Email"
+            android:paddingStart="20sp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="30sp"
+        android:background="#A8A3CC"
+        android:backgroundTint="#A8A3CC"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/mobile"
+            android:inputType="number"
+           android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext"
+            android:drawableEnd="@drawable/baseline_phone_24"
+            android:hint="Mobile No"
+            android:paddingStart="20sp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="30sp"
+        android:background="#A8A3CC"
+        android:backgroundTint="#A8A3CC"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="@dimen/_5sdp">
+        <EditText
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/edittext"
+            android:drawableEnd="@drawable/baseline_lock_24"
+            android:hint="Password"
+            android:paddingStart="24sp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            tools:ignore="Autofill,HardcodedText"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submit"
+        android:shadowColor="@color/black"
+        android:shadowRadius="3"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:elevation="@dimen/_20sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/redirect"
+        android:shadowColor="#C4958F8F"
+        android:shadowRadius="3"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Already Sign In"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

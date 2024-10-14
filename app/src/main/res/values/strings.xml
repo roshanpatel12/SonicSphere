@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SonicSphere</string>
+    <string name="submit">Submit</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="forgot_your_password">Forgot Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset">Reset</string>
+    <string name="sign_in">Sign In</string>
+    <string name="name">Name</string>
+    <string name="music">Music</string>
+</resources>
